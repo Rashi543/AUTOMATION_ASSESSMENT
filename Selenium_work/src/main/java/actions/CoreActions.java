@@ -29,10 +29,10 @@ public class CoreActions {
     {
         data.findElement(element).click();
     }
-    /*protected void click(WebElement element)
+    protected void click(WebElement element)
     {
         element.click();
-    }*/
+    }
     protected void choose(By element)
     {
         WebElement e1=data.findElement(element);
