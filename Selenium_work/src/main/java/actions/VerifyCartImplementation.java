@@ -34,13 +34,15 @@ public class VerifyCartImplementation extends CoreActions{
     @Step("verify product's name")
     public void verify_name()
     {
+        System.out.println("validating name");
         Assert.assertTrue(match_the_data(nextPart.product_name_data,nextPart.CART_PRODUCT_NAME));
-        System.out.println("validated the name");
+        System.out.println("validated name");
     }
     @Step("verify product price")
     public void verify_price()
     {
+        System.out.println("validating price");
         Assert.assertTrue(match_the_data(nextPart.product_price_data,nextPart.CART_PRODUCT_PRICE));
-        System.out.println("validated the price");
+        System.out.println("validated price");
     }
 }
